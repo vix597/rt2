@@ -1,4 +1,6 @@
-#!/usr/bin/env python
+'''
+Entry point
+'''
 import os
 import sys
 

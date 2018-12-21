@@ -1,2 +1,6 @@
 pylint
 pycodestyle
+coveralls
+tox
+pytest
+pytest-cov

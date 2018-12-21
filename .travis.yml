@@ -1,0 +1,13 @@
+language: python
+python:
+  - "3.5"
+  - "3.6"
+  - "3.7-dev"
+sudo: false
+install:
+  - python -m pip install --upgrade pip
+  - pip install tox-travis tox coveralls
+script:
+  - tox
+after_success:
+  - coveralls

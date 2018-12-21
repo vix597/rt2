@@ -1,6 +1,7 @@
 '''
 Helpful utilities for rt2
 '''
+
 import os
 import sys
 import random
