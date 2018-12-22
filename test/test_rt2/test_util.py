@@ -12,7 +12,7 @@ class TestUtils(TestCase):
         self.assertEqual(get_secret_key("test/path"), "TESTING_KEY")
 
     @patch("os.path.exists")
-    @patch("random.choice")
+    @patch("random.SystemRandom.choice")
     @patch("builtins.open", new_callable=mock_open)
     def test_key_file_not_exists(self, mock_file, mock_choice, mock_exists):
         mock_exists.return_value = False
